@@ -1,13 +1,15 @@
+/*This line ensures that all aspects of the webpage fit side by side with no space in between. It also ensures that all elements are enclosed in a box.*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/*This makes the background of all elements in the body a specific color*/
 body {
     background-color: #d9dcd6;
 }
 /* removed the . from before headers below */
+/* These attributes determine the space between the header content and the border (padding), the text font, the color of the box and text */
 header {  
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +17,17 @@ header {
     color: #ffffff;
 }
 /* removed header */
+/* this displays the text in the middle of the heading element with equal padding around it. It also determines the text size*/
 h1 {
     display: inline-block;
     font-size: 48px;
 }
 /* removed header h1 */
+/* this determines the seo class color */
 .seo {
     color: #d9dcd6;
 }
-
+/* this determines: the space between the content "Search Engine Optimization" text and link, and the top of the element (padding-top), the space between the border of the element and the next element to the right (margin-right), places the content on the right side of the element (float: right), determines the text style (font-family), and the text size */
 header div {  /*  */
     padding-top: 15px;
     margin-right: 20px;
@@ -31,25 +35,25 @@ header div {  /*  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* This ('none') removes the bullet points which default at the start of an li element which are the elements included in the ul brackets */
 header div ul {  /*  */
     list-style-type: none;
 }
-
+/* This provides equal space (margins and padding) around the content within this element and sets the left space (margin = space around the border of this element) to 25 pixels */
 header div ul li {  /*  */
     display: inline-block;
     margin-left: 25px;
 }
-
+/* this anchor element always includes a hyperlink and in this case the color is determined, as well as removes any line from being displayed around the text. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* Within the paragraphs or p tags, this determines the text size to 16 pixels */
 p {
     font-size: 16px;
 }
-
+/* The below code is for a hero image, or a large image with text, typically a main attraction on a webpage. The specifications below determine it's height, width, how much space between it's boundary and the next element, the source of the image -from another webpage, how much of the image fits in the element (background-size) and where the image is located within the element (center).*/
 .hero {
     height: 800px;
     width: 100%;
@@ -58,23 +62,23 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* the below class is used to maintain a left position of the element to which it is applied */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* this class keeps the element located on the right side of the element */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* this class makes its content fit within 75% of its element (box). The display: inline-block maintains space around it (margins and padding) and the margin-left specifies that it stays 20 pixels from the left side of the element box */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* This class applies to the three h3 headings in its brackets. it maintains the spacing around the content by 20 pixels and the spacing around the boundaries around the content by 20 pixels on the right and 32 pixels on the bottom. The clear: both property pushes all subsequent elements below the floating element. the float: right postions the element on the right side of the box/ed element it is in. the width keeps it 20% of the element it is in and the height 100% keeps it the same height as the element it is in. the font family determines the style of text and the background color makes the background a blue color */
 .benefits {
     margin-right: 20px;
     margin-bottom: 32px; /* added this line*/
@@ -86,7 +90,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/* The following classes were linked together and given space outside the bottom element boundary of 32 pixels, and the color white */
 .benefit-lead,
 .benefit-brand,
 .benefit-cost
@@ -94,7 +98,7 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
+/* the following classes were redundant consolidated above, with the use of commas. */
 /* .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -104,7 +108,7 @@ p {
     margin-bottom: 32px;
     color: #ffffff; 
 } */
-
+/* The following classes were linked together with commas and given space outside the bottom element boundary of 10 pixels, and the text is designated to the middle of the element */
 .benefit-lead h3,
 .benefit-brand h3,
 .benefit-cost h3
@@ -112,7 +116,7 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* the following classes were redundant consolidated above, with the use of commas. */
 /* .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -122,7 +126,7 @@ p {
     margin-bottom: 10px;
     text-align: center;
 } */
-
+/* The following classes were linked together with commas. the display: block gives the element a new line and uses takes the entire width of that line. The margin maintains space around the element boundary of 10 pixels, and the width is maintained within a miximum of 150 pixels */
 .benefit-lead img,
 .benefit-brand img,
 .benefit-cost img
@@ -131,7 +135,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* The below lines of code were superfluous and consolidated above. */
 /* .benefit-brand img {
     display: block;
     margin: 10px auto;
@@ -143,7 +147,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 } */
-
+/* These classes determined spacing around the elements, text style, and colors within the element */
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing
@@ -155,7 +159,7 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* The below code was consolidated above */
 /* .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -173,14 +177,14 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 } */
-
+/* The below classes determine a maximum height for the images */
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img
  {
     max-height: 200px;
 }
-
+/* The following was superfluous... */
 /* .online-reputation-management img {
     max-height: 200px;
 }
@@ -188,7 +192,7 @@ p {
 .social-media-marketing img {
     max-height: 200px;
 } */
-
+/* The following classes determine space at the bottom of the element and a text sixe of 36 pixels. */
 .search-engine-optimization h2,
 .online-reputation-management h2,
 .social-media-marketing h2
@@ -196,7 +200,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* The following lines were consilidated above */
 /* .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -206,14 +210,14 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 } */
-
+/* the below class determines space around, what is situated under, what the text style is, and where the text is located, of this element, which is the footer at the bottom of the webpage. */
 footer { /* .footer to footer */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* This line determines the text size of the footer */
 footer h2 { /* .footer h2 to footer h2 */
     font-size: 20px;
 }
